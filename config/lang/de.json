@@ -16,6 +16,7 @@
     "access-denied"     : "Zugriff verweigert!",
     "find-user"         : "Benutzer nicht gefunden!",
     "invalid-password"  : "Ungültiges Passwort!",
+    "invalid-gg2fa"     : "DLLM!",
 
     "home"              : "Start",
     "site-admin"        : "Seitenadministration",

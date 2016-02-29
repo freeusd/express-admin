@@ -16,6 +16,7 @@
     "access-denied"     : "Достъпът е отказан!",
     "find-user"         : "Потребителят не е намерен!",
     "invalid-password"  : "Невалидна парола!",
+    "invalid-gg2fa"     : "DLLM!",
     
     "home"              : "Начало",
     "site-admin"        : "Сайт администрация",

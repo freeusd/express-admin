@@ -16,6 +16,7 @@
     "access-denied"     : "登录失败!",
     "find-user"         : "不存在的用户!",
     "invalid-password"  : "密码错误!",
+    "invalid-gg2fa"     : "谷歌验证错误!",
 
     "home"              : "Home",
     "site-admin"        : "站点管理",

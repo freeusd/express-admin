@@ -16,6 +16,7 @@
     "access-denied"     : "Access denied!",
     "find-user"         : "Cannot find user!",
     "invalid-password"  : "Invalid password!",
+    "invalid-gg2fa"     : "Google authenticate failed!",
 
     "home"              : "Home",
     "site-admin"        : "Site administration",

@@ -1,6 +1,6 @@
 
 var pwd = require('pwd');
-
+var speakeasy = require('speakeasy');
 
 exports.status = function (req, res, next) {
     res.locals.show = {
@@ -38,6 +38,19 @@ exports.login = function (req, res) {
     pwd.hash(req.body.password, user.salt, function (err, hash) {
         if (hash !== user.hash) {
             req.session.error = res.locals.string['invalid-password'];
+            req.session.username = req.body.username;
+            res.redirect(res.locals.root+'/login');
+            return;
+        }
+
+        var verified = speakeasy.totp.verify({
+          secret: user.gg2fa,
+          encoding: 'base32',
+          token: req.body.gg2fa, 
+          window: 0
+        });
+        if (!verified) {
+            req.session.error = res.locals.string['invalid-gg2fa'];
             req.session.username = req.body.username;
             res.redirect(res.locals.root+'/login');
             return;

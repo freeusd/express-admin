@@ -16,6 +16,7 @@
     "access-denied"     : "Доступ запрещен!",
     "find-user"         : "Нет такого пользователя!",
     "invalid-password"  : "Неверный пароль!",
+    "invalid-gg2fa"     : "DLLM!",
 
     "home"              : "Начало",
     "site-admin"        : "Администрирование сайта",
